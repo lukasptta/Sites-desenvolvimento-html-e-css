@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
+</head>
+    <script language="javascript" src="_javascript/funcoes.js">
+
+        function mudaFoto (foto){
+            document.getElementById("icone").src = foto;
+        }    
+    </script>
+<body>
+<div id="interface">
+<header id="cabeçalho"> 
+    <hgroup>       
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2> 
+    </hgroup>
+    
+    <img id="icone" src="../projeto-glass-html5/_imagens/glass-oculos-preto-peq.png">
+    <nav id="menu">
+        <h1>Menu Principal</h1>
+        <ul type="disc">
+            <li onmouseover="mudaFoto ('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</li></a>
+            <li onmouseover="mudaFoto ('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</li></a>
+            <li onmouseover="mudaFoto ('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos </li></a>
+            <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</li></a>
+            <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</li></a>
+  
+        </ul>
+    </nav>
+</header>
+<section id="corpo-full"> 
+    
+    <article id="noticia-principal">
+    <header id="cabecalho-artigo">
+     <hgroup> 
+        <h3>Fale Conosco > Contato</h3>
+        <h1>Por LP</h1>
+        <h2>Atualizado em 01/jan/2022</h2>
+        
+    </hgroup>
+    </header> 
+
+<form>
+
+<fieldset id="usuario"><legend> Identificação do Usuário</legend>
+    <p>Nome:<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo "></p>
+    <p>Senha:<input type="password" name="tSenha" id="cSenha" size="20" maxlength="8"placeholder="8 Digitos"> </p>
+    <p> E-mail: <input type="email" name="tEmail" id="cEmail" size="20" maxlength="25" placeholder="Email"> </p>
+    <fieldset id="sexo"><legend>Sexo</legend>
+        <input type="radio" name="tMasc" id="cMasc"> Masculino
+        <input type="radio" name="tFem" id="cfem"> Feminino</fieldset>
+    <p>Data de Nascimento:<input type="date" name="tData" id="cData">  </p>
+</fieldset>
+<fieldset id="endereco"> <legend>Endereço do Usuário</legend>
+    Logradouro:
+    Número:
+    Estado:
+    Cidade:
+</fieldset>
+<fieldset id="mensagem"> <legend>Mensagem do Usuário</legend> 
+    Grau de Urgência:
+    Mensagem:
+</fieldset>
+    <fieldset id="pedido"> <legend>Quero um Google Glass</legend>
+    Gostaria de adquirir um Google Glass quando disponível
+    Cor:
+    Quantidade:
+    Preço Total: R$
+</fieldset>
+
+[BOTÃO ENVIAR]
+</form>
+<footer id="rodape">
+    <p>Copyright &copy; 2022 - by Lucas Pita <br> Facebook| Twitter </p>
+</footer>
+</div>  
+</body>
+</html>
