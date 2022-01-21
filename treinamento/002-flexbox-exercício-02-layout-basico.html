@@ -13,22 +13,49 @@
 			
 			.wrapper{
 				color: white;
+				display:flex;
+				flex-direction:column;
+				height: 100vh;
+				
 			}
+			
  			.wrapper > * {
 				padding: 2.5rem;
 			}
 			
 			header,footer {
-				background-color: lightblue;
+				background-color: lightskyblue;
 			}
 			.nav {
 				background-color: royalblue;
+				order: 1;
 			}
 			article {
 				background-color: tomato;
 			}
 			.banner{
 				background-color: seagreen;
+				order: 1;
+			}
+			footer {
+				order: 1;
+			}
+
+			@media screen and (min-width: 1024px){
+				.wrapper {
+					flex-direction: row;
+					flex-wrap: wrap;
+				}	
+			}
+			.nav , .banner{
+				order:0;
+				flex: 1 0 20%;
+			}
+			article{
+				flex: 1 0 60%;
+			}
+			header,footer{
+				flex: 1 0 100%;
 			}
 		</style>
 	</head>
