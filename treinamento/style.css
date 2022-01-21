@@ -2,15 +2,23 @@
 
 #container{
 
-    width: 400px;
-    height: 400px;
-    padding: 30px ;
-    border: 2px solid #ff0000 ;
-    margin: 30px ;        
+    display: inline-flex;
+    width: 30%;
+    padding: 1% ;
+    border: 1px solid #028082 ;
+    margin: 0 auto ;        
+    background-color: #85d0bc;
+    color: #028082;
+}
+
+.item{
+background-color: #cdf6eb;
+border: 1px solid #028082;
+width: 20%;
 
 }
 
 h1{
-    text-shadow: 64px 4px -50px #808080;
+    text-shadow: 6px 5px 9px #f10a0a;
 }
 
