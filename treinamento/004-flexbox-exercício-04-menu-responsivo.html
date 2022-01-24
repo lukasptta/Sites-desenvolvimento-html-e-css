@@ -4,6 +4,7 @@
   		<title>Menu Responsivo</title>
   		<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="https://kit.fontawesome.com/6377920868.js" crossorigin="anonymous"></script>
   		<style type="text/css">
  		* {
 			padding: 0;
@@ -16,13 +17,66 @@
 			font-weight: 300;
 			color: #fff;		
 		}
+		header{
+			background-color: mediumpurple;
+		}
+		nav{ 
+			display:flex ;
+			padding:10px;
+			flex-direction: column;
+
+		}
+
+		#menu{
+		 	display: none;	
+		}
+		nav ul {
+			display: flex;
+			flex-direction: column;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav ul li {
+			flex: 1 1 100%;
+		}
+		nav ul li a {
+			background-color: indigo;
+			padding: 10px 0;
+			display:block;
+			text-decoration: none;
+			text-align: center;
+			color: #fff;
+
+
+		}
+		@media screen and (min-width: 480px){
+			nav{
+				flex-direction: row;
+			}
+			.menu{
+				display: none;
+			}
+			nav ul{
+				flex-direction: row;
+				width: 30%;
+				justify-content: space-between;
+
+			}
+			nav ul li {
+				flex: 0 1 31%;
+			}
+
+
+		}
+
 		</style>
 	</head>
 	<body>
 		<header>
 	  		<nav>    
 				<input type="checkbox" id="menu">
-		  		<label for="menu" class="menu"></i>
+		  		<label for="menu" class="menu"><i class="fa fa-bars"></i>
 		  		</label>
 		    	<ul>
 		      		<li><a href="index.html">Home</a></li>
