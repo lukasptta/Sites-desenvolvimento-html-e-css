@@ -38,7 +38,7 @@
 			}
 			.entry-meta{
 				font-size: .8rem;
-				padding:.3rem .7rem 0;
+				padding: .3rem 0 .7rem;
 			}
 			.entry-meta a {
 				font-weight: 400;
@@ -46,10 +46,11 @@
 				color: #444;
 			}
 			.post-thumbnail{
-				margin-bottom: .7rem;
 				display: block;
+				margin-bottom: .7rem;
 
 			}
+
 			.entry-content p {
 				line-height: 1.5rem;
 			}
@@ -62,6 +63,26 @@
 			.more-link:hover {
 				text-decoration: underline;
 
+			}
+			@media screen and (min-width: 768px){
+				#content{
+					width: 75%;
+				}
+				.post {
+					display: flex;
+					flex-wrap: wrap;
+				}
+				.entry-header , .entry-meta{
+					flex-basis: 100%;
+				}
+				.post-image{
+					flex-basis: 40%;
+				}
+				.entry-content{
+					flex-basis: 60%;
+					
+				
+				}
 			}
 		</style>
 	</head>
