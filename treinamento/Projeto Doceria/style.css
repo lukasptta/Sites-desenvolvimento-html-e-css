@@ -126,17 +126,22 @@ section{
     cursor: pointer;
     margin-left: 25px;
 }
-.sessao-bemvindo-btn,form input[type=submit]:hover{
+.sessao-bemvindo-btn:hover , form input[type=submit]{
     background-color: #2790c6;
 }
+
 /*sessao sobre*/
-#sessao-sobre . .sessao-minibanner{
+#sessao-sobre  .sessao-minibanner{
     float: right;
     margin-right: 50px;
     background-image: url('../Projeto\ Doceria/img/banner4.jpg');
 }
-#sessao-sobre . .sessao-descricao{
+#sessao-sobre .sessao-descricao{
     position: absolute;
     left: 25px;
     width: calc(100%-400px) ;
+}
+/* Galerias*/
+.banner-galeria{
+
 }
