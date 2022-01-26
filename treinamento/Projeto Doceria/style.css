@@ -66,6 +66,9 @@ a{
     font-size: 35px; 
 
 }
+.content h2 {
+    font-size: 35px;
+}
 section{
     padding-left: 50px;
 }
@@ -107,12 +110,34 @@ section{
     padding-right: 30px;
 
 }
+
+
 .sessao-descricao p {
     line-height: 2;
     font-size: 16px;
     margin-bottom: 30px;
     margin-left: 25px;
+    padding-left: 10px;
+    text-align: justify;
+    padding-right: 25px;
 }
+
+.sessao-descricao2 {
+	position:static;
+	left: 370px;
+	padding-right: 50px;
+}
+
+.sessao-descricao2 p {
+	line-height: 2;
+	font-size: 16px;
+	margin-bottom: 30px;
+	margin-left: 25px;
+    text-align: justify;
+    padding-right: 350px;
+}
+
+
 .sessao-bemvindo-btn,form input[type=submit]{
     background-color: #006599;
     color:#FFF;
@@ -143,5 +168,37 @@ section{
 }
 /* Galerias*/
 .banner-galeria{
+    background-position: center;
+    background-repeat: cover;
+    display: inline-block;
+    height: 200px;
+}
+#sessao-doces1,#sessao-doces2,#sessao-doces3{
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+.doces1-imgs{
+    width: 18.8%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
 
+#img1{
+    background-image: url(../Projeto\ Doceria/img/galeria1.jpg);
+    margin-left: 0;
+}
+#img2{
+    background-image: url(../Projeto\ Doceria/img/galeria2.jpg);
+   
+}#img3{
+    background-image: url(../Projeto\ Doceria/img/galeria3.jpg);
+    
+}
+#img4{
+    background-image: url(../Projeto\ Doceria/img/galeria4.jpg);
+    
+}
+#img5{
+    background-image: url(../Projeto\ Doceria/img/galeria5.jpg);
+    margin-right: 0;
 }
