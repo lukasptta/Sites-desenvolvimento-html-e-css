@@ -35,6 +35,8 @@ a{
 }
 #sidebar li{
     padding:20px;
+    text-align: center;
+    font-size: 30px;
   
 }
 .sidebar-container{
@@ -169,7 +171,7 @@ section{
 /* Galerias*/
 .banner-galeria{
     background-position: center;
-    background-repeat: cover;
+    background-size: cover;
     display: inline-block;
     height: 200px;
 }
@@ -201,4 +203,77 @@ section{
 #img5{
     background-image: url(../Projeto\ Doceria/img/galeria5.jpg);
     margin-right: 0;
+}
+
+.doces2-imgs{
+    width: 32.3%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+#img6{
+    background-image: url(../Projeto\ Doceria/img/galeria6.jpg);
+    margin-left: 0;
+}
+#img7{
+    background-image: url(../Projeto\ Doceria/img/galeria7.jpg);
+    
+}
+#img8{
+    background-image: url(../Projeto\ Doceria/img/galeria8.jpg);
+    margin-right: 0;
+}
+.doces3-imgs{
+    width: 23.9%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+#img9{
+    background-image: url(../Projeto\ Doceria/img/galeria9.jpg);
+    
+}
+#img10{
+    background-image: url(../Projeto\ Doceria/img/galeria10.jpg);
+    
+}
+#img11{
+    background-image: url(../Projeto\ Doceria/img/galeria11.jpg);
+    
+}
+/*Contato*/
+#form-contato{
+    width: 500px;
+}
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea{
+ display: block;
+ border: 1px solid #006599;   
+ padding: 10px;
+ margin-bottom: 20px;
+ width: 100%;
+ font-size: 16px;
+ font-family: 'open sans', sans-serif;
+}
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea{
+    border-color: #2790c6;
+
+}
+#form-contato textarea{
+    height: 150px;
+}
+#form-contato::placeholder{
+    color: #2790c6;
+}
+#form-contato input[type=submit]{
+  margin-left: 0;
+  font-size: 16px;
+  width: 180px;  
+}
+/*Footer*/
+footer{
+    height: 100px;
+    padding-top: 150px;
+    color: #006599;
+}
+footer p{
+    text-align: center;
+    font-weight: bold;
 }
